@@ -1,6 +1,7 @@
+﻿/*
 The MIT License (MIT)
 
-Copyright (c) Heleonix - Hennadii Lutsyshyn
+Copyright (c) 2015 Heleonix.Validation - Hennadii Lutsyshyn (Heleonix)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+namespace Heleonix.Validation
+{
+    /// <summary>
+    /// Represents the <see langword="interface"/> to finalize building rules.
+    /// </summary>
+    /// <typeparam name="TObject">A type of an object to validate.</typeparam>
+    /// <typeparam name="TTarget">A type of a target.</typeparam>
+    /// <typeparam name="TValue">A type of a value returned by a rule.</typeparam>
+    public interface IFinalRuleBuilder<TObject, TTarget, TValue> : IInitialValueResultBuilder<TObject, TTarget, TValue>
+    {
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets a rule.
+        /// </summary>
+        new Rule Rule { get; set; }
+
+        #endregion
+    }
+}

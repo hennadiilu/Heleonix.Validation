@@ -1,6 +1,7 @@
+﻿/*
 The MIT License (MIT)
 
-Copyright (c) Heleonix - Hennadii Lutsyshyn
+Copyright (c) 2015 Heleonix.Validation - Hennadii Lutsyshyn (Heleonix)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,39 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+using System;
+using System.Collections.Generic;
+
+namespace Heleonix.Validation.Rules
+{
+    /// <summary>
+    /// Represents the custom rule result.
+    /// </summary>
+    [Serializable]
+    public class CustomRuleResult : RuleResult
+    {
+        #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LengthRuleResult"/> class.
+        /// </summary>
+        /// <param name="name">A name of a rule.</param>
+        /// <param name="value">A value of a rule.</param>
+        public CustomRuleResult(string name, object value) : base(name, value)
+        {
+        }
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Gets custom data.
+        /// </summary>
+        public IDictionary<string, object> Data { get; } = new Dictionary<string, object>();
+
+        #endregion
+    }
+}
