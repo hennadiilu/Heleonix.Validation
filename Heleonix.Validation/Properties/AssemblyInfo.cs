@@ -1,6 +1,7 @@
+﻿/*
 The MIT License (MIT)
 
-Copyright (c) Heleonix - Hennadii Lutsyshyn
+Copyright (c) 2015 Heleonix.Validation - Hennadii Lutsyshyn (Heleonix)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+
+[assembly: AssemblyTitle("Heleonix.Validation")]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+
+[assembly: Guid("ab114f0e-900b-417f-b320-7e7e247147bf")]
+
+#if CI || DEBUG
+
+[assembly: InternalsVisibleTo("Heleonix.Validation.Tests")]
+#endif
