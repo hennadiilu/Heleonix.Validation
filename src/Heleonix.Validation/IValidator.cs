@@ -11,15 +11,10 @@ namespace Heleonix.Validation
     public interface IValidator
     {
         /// <summary>
-        /// Sets up a validator.
-        /// </summary>
-        void Setup();
-
-        /// <summary>
         /// Executes validation.
         /// </summary>
         /// <param name="context">A context of a validator.</param>
         /// <returns>A validator result.</returns>
-        ValidatorResult Validate(ValidatorContext context);
+        RulesetResult Validate(object obj, ValidationOptions options = null, ValidatorContext context = null);
     }
 }

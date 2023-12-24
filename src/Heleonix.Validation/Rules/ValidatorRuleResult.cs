@@ -16,7 +16,7 @@ namespace Heleonix.Validation.Rules
         /// </summary>
         /// <param name="name">A name of a rule.</param>
         /// <param name="validatorResult">A validator result.</param>
-        public ValidatorRuleResult(string name, ValidatorResult validatorResult)
+        public ValidatorRuleResult(string name, RulesetResult validatorResult)
             : base(name, null)
         {
             this.ValidatorResult = validatorResult;
@@ -25,7 +25,7 @@ namespace Heleonix.Validation.Rules
         /// <summary>
         /// Gets or sets a validator rule result.
         /// </summary>
-        public ValidatorResult ValidatorResult { get; set; }
+        public RulesetResult ValidatorResult { get; set; }
 
         /// <summary>
         /// Indicates whether the result is empty.

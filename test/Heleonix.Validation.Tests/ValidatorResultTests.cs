@@ -8,12 +8,12 @@ namespace Heleonix.Validation.Tests
     using NUnit.Framework;
 
     /// <summary>
-    /// Tests the <see cref="ValidatorResult"/>.
+    /// Tests the <see cref="RulesetResult"/>.
     /// </summary>
     public class ValidatorResultTests
     {
         /// <summary>
-        /// Tests the <see cref="ValidatorResult.TargetResults"/>.
+        /// Tests the <see cref="RulesetResult.TargetResults"/>.
         /// </summary>
         [Test]
         public void TargetResults()
@@ -25,7 +25,7 @@ namespace Heleonix.Validation.Tests
         }
 
         /// <summary>
-        /// Tests the <see cref="ValidatorResult.IsEmpty"/>.
+        /// Tests the <see cref="RulesetResult.IsEmpty"/>.
         /// </summary>
         /// <param name="isEmpty">Determines whether the result is empty.</param>
         [Test]

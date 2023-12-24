@@ -9,7 +9,7 @@ namespace Heleonix.Validation
     /// Represents a result of a validator.
     /// </summary>
     [Serializable]
-    public class ValidatorResult : Result
+    public class RulesetResult
     {
         /// <summary>
         /// Gets a list of <see cref="TargetResult"/>.

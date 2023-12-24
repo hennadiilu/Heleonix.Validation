@@ -6,15 +6,24 @@
 namespace Heleonix.Validation
 {
     /// <summary>
-    /// Represents the base class for all results.
+    /// Represents the validation result of a field, which is selected from the defined possible outcomes results depending on the ou class for all results.
     /// </summary>
     [Serializable]
-    public abstract class Result
+    public class Result
     {
         /// <summary>
-        /// When overridden in a derived class, indicates whether the result is empty.
+        /// Gets or sets an outcome of an executed <see cref="Rule"/>.
         /// </summary>
-        /// <returns><see langword="true"/> if the result is empty, otherwise <see langword="false"/>.</returns>
-        public abstract bool IsEmpty();
+        public object Outcome { get; set; }
+
+        /// <summary>
+        /// Gets or sets a resource name.
+        /// </summary>
+        public string Resource { get; set; }
+
+        /// <summary>
+        /// Gets or sets a resource key.
+        /// </summary>
+        public string Key { get; set; }
     }
 }

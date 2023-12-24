@@ -39,7 +39,7 @@ namespace Heleonix.Validation
         /// The <paramref name="context" /> is <see langword="null"/>.
         /// </exception>
         /// <returns>A validator result.</returns>
-        public virtual ValidatorResult Validate(ValidatorContext context)
+        public virtual RulesetResult Validate(ValidatorContext context)
         {
             Throw<ArgumentNullException>.IfNull(context, nameof(context));
 
@@ -64,7 +64,7 @@ namespace Heleonix.Validation
         /// <param name="obj">An object to validate.</param>
         /// <returns>A validator result.</returns>
         /// <exception cref="ArgumentNullException">The <paramref name="obj" /> is <see langword="null"/>.</exception>
-        public virtual ValidatorResult Validate(object obj)
+        public virtual RulesetResult Validate(object obj)
             => this.Validate(new ValidatorContext(obj, null, this.ValidatorProvider));
     }
 }

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Heleonix.Validation.IBuilder&lt;TObject&gt;" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalGroupRuleBuilder&lt;TObject, TTarget&gt;" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="3.25" />
+    <InheritanceLine Type="Heleonix.Validation.IInitialRuleBuilder&lt;TObject, TTarget&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.188" Y="3.476" />
+        <Point X="21.188" Y="4.026" />
+        <Point X="21.188" Y="4.026" />
+        <Point X="21.188" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFinalGroupRuleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalGroupTargetBuilder&lt;TObject&gt;" Collapsed="true">
+    <Position X="25.75" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFinalGroupTargetBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalRuleBuilder&lt;TObject, TTarget, TValue&gt;" Collapsed="true">
+    <Position X="26.25" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFinalRuleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalTargetBuilder&lt;TObject, TTarget&gt;" Collapsed="true">
+    <Position X="18" Y="3.75" Width="3" />
+    <InheritanceLine Type="Heleonix.Validation.IInitialRuleBuilder&lt;TObject, TTarget&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.688" Y="3.476" />
+        <Point X="19.688" Y="3.988" />
+        <Point X="19.688" Y="3.988" />
+        <Point X="19.688" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFinalTargetBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalValidatorRuleBuilder&lt;TObject, TTarget&gt;" Collapsed="true">
+    <Position X="22" Y="4.25" Width="3.5" />
+    <InheritanceLine Type="Heleonix.Validation.IInitialRuleBuilder&lt;TObject, TTarget&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.375" Y="3.476" />
+        <Point X="21.375" Y="4.375" />
+        <Point X="22" Y="4.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFinalValidatorRuleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IFinalValueResultBuilder&lt;TObject, TTarget, TValue&gt;" Collapsed="true">
+    <Position X="25.75" Y="3.75" Width="4" />
+    <InheritanceLine Type="Heleonix.Validation.IInitialRuleBuilder&lt;TObject, TTarget&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.562" Y="3.476" />
+        <Point X="21.562" Y="4.062" />
+        <Point X="25.75" Y="4.062" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="Heleonix.Validation.IInitialValueResultBuilder&lt;TObject, TTarget, TValue&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="24" Y="3.476" />
+        <Point X="24" Y="3.938" />
+        <Point X="25.75" Y="3.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>IFinalValueResultBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IInitialRuleBuilder&lt;TObject, TTarget&gt;" Collapsed="true">
+    <Position X="18.75" Y="2.75" Width="3" />
+    <InheritanceLine Type="Heleonix.Validation.IBuilder&lt;TObject&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.312" Y="2.338" />
+        <Point X="21.312" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IInitialRuleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IInitialTargetBuilder&lt;TObject&gt;" Collapsed="true">
+    <Position X="23" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IInitialTargetBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Heleonix.Validation.IInitialValueResultBuilder&lt;TObject, TTarget, TValue&gt;" Collapsed="true">
+    <Position X="22" Y="2.75" Width="4" />
+    <InheritanceLine Type="Heleonix.Validation.IBuilder&lt;TObject&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.438" Y="2.338" />
+        <Point X="22.438" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IInitialValueResultBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9.75" />
+</ClassDiagram>

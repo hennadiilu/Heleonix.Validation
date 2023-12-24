@@ -17,7 +17,7 @@ namespace Heleonix.Validation
         /// <param name="context">A context to validate an object.</param>
         /// <exception cref="NotImplementedException">Should not be called.</exception>
         /// <returns>The <see cref="NotImplementedException"/>.</returns>
-        public override ValidatorResult Validate(ValidatorContext context)
+        public override RulesetResult Validate(ValidatorContext context)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +37,7 @@ namespace Heleonix.Validation
         /// <param name="context">A context of a validator.</param>
         /// <exception cref="NotImplementedException">Should not be called.</exception>
         /// <returns>The <see cref="NotImplementedException"/>.</returns>
-        protected override ValidatorResult CreateResult(ValidatorContext context)
+        protected override RulesetResult CreateResult(ValidatorContext context)
         {
             throw new NotImplementedException();
         }

@@ -27,8 +27,8 @@ namespace Heleonix.Validation
         /// <exception cref="ArgumentNullException">
         /// The <paramref name="context"/> is <see langword="null"/>.
         /// </exception>
-        /// <returns>A <see cref="ValidatorResult"/>.</returns>
-        public virtual ValidatorResult Validate(ValidatorContext context)
+        /// <returns>A <see cref="RulesetResult"/>.</returns>
+        public virtual RulesetResult Validate(ValidatorContext context)
         {
             Throw<ArgumentNullException>.IfNull(context, nameof(context));
 
@@ -76,14 +76,14 @@ namespace Heleonix.Validation
         protected abstract void Setup(IInitialTargetBuilder<TObject> builder);
 
         /// <summary>
-        /// Creates a <see cref="ValidatorResult"/>.
+        /// Creates a <see cref="RulesetResult"/>.
         /// </summary>
         /// <param name="context">A <see cref="ValidatorContext"/>.</param>
         /// <exception cref="ArgumentNullException">
         /// The <paramref name="context"/> is <see langword="null"/>.
         /// </exception>
-        /// <returns>A <see cref="ValidatorResult"/>.</returns>
-        protected virtual ValidatorResult CreateResult(ValidatorContext context)
+        /// <returns>A <see cref="RulesetResult"/>.</returns>
+        protected virtual RulesetResult CreateResult(ValidatorContext context)
         {
             Throw<ArgumentNullException>.IfNull(context, nameof(context));
 

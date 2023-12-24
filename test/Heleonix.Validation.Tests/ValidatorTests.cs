@@ -68,7 +68,7 @@ namespace Heleonix.Validation.Tests
         /// Tests the <see cref="Validator{TObject}.Validate"/>.
         /// </summary>
         /// <param name="passContext">Determines whether to pass a <see cref="ValidatorContext"/>.</param>
-        /// <param name="createResult">Determines whether to create a <see cref="ValidatorResult"/>.</param>
+        /// <param name="createResult">Determines whether to create a <see cref="RulesetResult"/>.</param>
         /// <param name="continueValidation">Determines whether to continue validation.</param>
         /// <param name="ignoreEmptyResults">Determines whether to ignore empty results.</param>
         [Test]
@@ -107,7 +107,7 @@ namespace Heleonix.Validation.Tests
 
             if (!createResult)
             {
-                mock.Protected().Setup<ValidatorResult>(nameof(this.CreateResult), context).Returns(() => null);
+                mock.Protected().Setup<RulesetResult>(nameof(this.CreateResult), context).Returns(() => null);
             }
 
             mock.Object.Setup();
